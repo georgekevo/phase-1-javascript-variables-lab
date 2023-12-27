@@ -1,7 +1,10 @@
 const fs = require('fs')
 const path = require('path')
-
+var expect = require('chai').expect
 const js = fs.readFileSync(path.resolve(__dirname, '..', 'index.js'), 'utf-8')
+let companyName = 'Scuber';
+let mostProfitableNeighborhood = 'Chelsea'
+let companyCeo = 'Susan Smith'
 
 describe('index.js', function () {
   describe('companyName', function () {
